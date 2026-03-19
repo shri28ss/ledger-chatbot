@@ -9,8 +9,8 @@ interface Message {
   timestamp: Date;
 }
 
-// Ensure this matches where you run the chatbot backend server
-const API_URL = 'http://localhost:8001/api/chat';
+// Use environment variable for the backend URL when deployed on Vercel
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8001/api/chat';
 
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
