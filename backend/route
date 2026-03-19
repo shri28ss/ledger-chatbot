@@ -1,0 +1,8 @@
+'''# Insert this directly into your backend.py
+from chatbot import chatbot # after moving chatbot.py over
+
+@app.post("/api/chat")
+def handle_chat(req: dict):
+    # Runs the exact Zomato-style bot logic you already have inside your main app
+    response_text = chatbot(req["query"], req["user_id"])
+    return {"response": response_text}'''
