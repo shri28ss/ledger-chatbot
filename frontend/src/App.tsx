@@ -1,4 +1,3 @@
-import React from 'react'
 import ChatbotWidget from './ChatbotWidget'
 import './index.css' // Import basic reset
 
